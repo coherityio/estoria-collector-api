@@ -1,8 +1,6 @@
-package io.coherity.estoria.collector.api;
+package io.coherity.estoria.collector.spi;
 
 import java.util.Collection;
-
-import io.coherity.estoria.collector.spi.CollectorDescriptor;
 
 public interface CloudProvider
 {

@@ -1,8 +1,6 @@
-package io.coherity.estoria.collector.api;
+package io.coherity.estoria.collector.spi;
 
 import java.util.Optional;
-
-import io.coherity.estoria.collector.spi.CollectionScope;
 
 public interface EndpointResolver
 {

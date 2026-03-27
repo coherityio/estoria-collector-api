@@ -1,8 +1,6 @@
-package io.coherity.estoria.collector.api;
+package io.coherity.estoria.collector.spi;
 
 import java.util.Optional;
-
-import io.coherity.estoria.collector.spi.Collector;
 
 public interface ProviderSession extends AutoCloseable
 {
