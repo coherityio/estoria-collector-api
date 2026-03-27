@@ -3,6 +3,8 @@ package io.coherity.estoria.collector.spi;
 import java.util.Map;
 import java.util.Optional;
 
+import io.coherity.estoria.collector.api.CloudProvider;
+
 public interface CollectionScope
 {
     CloudProvider provider();

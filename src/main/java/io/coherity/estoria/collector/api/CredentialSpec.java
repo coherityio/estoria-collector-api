@@ -1,4 +1,4 @@
-package io.coherity.estoria.collector.spi;
+package io.coherity.estoria.collector.api;
 
 import java.util.Map;
 
