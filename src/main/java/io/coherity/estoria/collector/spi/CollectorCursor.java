@@ -5,7 +5,7 @@ import java.util.Optional;
 
 public interface CollectorCursor
 {
-    List<CollectedEntity> entities();
-    Optional<String> nextCursorToken();
-    CursorMetadata metadata();
+    List<CloudEntity> getEntities();
+    Optional<String> getNextCursorToken();
+    CursorMetadata getMetadata();
 }

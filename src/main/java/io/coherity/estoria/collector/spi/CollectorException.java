@@ -3,8 +3,7 @@ package io.coherity.estoria.collector.spi;
 public class CollectorException extends RuntimeException
 {
     private static final long serialVersionUID = 1L;
-    
-	public CollectorException(String message)
+    public CollectorException(String message)
     {
         super(message);
     }

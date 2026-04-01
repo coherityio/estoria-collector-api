@@ -2,14 +2,18 @@ package io.coherity.estoria.collector.spi;
 
 import java.util.Map;
 import java.util.Optional;
+import lombok.Builder;
+import lombok.Data;
 
-public interface CollectionScope
+@Data
+@Builder
+public class CollectionScope
 {
-    CloudProvider provider();
-    Map<ScopeDimension, String> dimensions();
-    default Optional<String> value(ScopeDimension dimension)
+    private CloudProvider provider;
+    private Map<ScopeDimension, String> dimensions;
+    private Map<String, String> attributes;
+    public Optional<String> getValue(ScopeDimension dimension)
     {
-        return Optional.ofNullable(dimensions().get(dimension));
+        return Optional.ofNullable(dimensions.get(dimension));
     }
-    Map<String, String> attributes();
 }

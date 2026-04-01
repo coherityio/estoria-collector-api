@@ -1,10 +1,13 @@
 package io.coherity.estoria.collector.spi;
 
 import java.util.Map;
+import lombok.Builder;
+import lombok.Data;
 
-public interface ProviderContext
+@Data
+@Builder
+public class ProviderContext
 {
-    CollectionScope scope();
-    Map<String, Object> settings();
-    CredentialSpec credentialSpec();
+    private CollectionScope scope;
+    private Map<String, Object> configuration;
 }

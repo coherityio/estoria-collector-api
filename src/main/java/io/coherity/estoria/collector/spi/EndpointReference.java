@@ -2,10 +2,14 @@ package io.coherity.estoria.collector.spi;
 
 import java.net.URI;
 import java.util.Map;
+import lombok.Builder;
+import lombok.Data;
 
-public interface EndpointReference
+@Data
+@Builder
+public class EndpointReference
 {
-    String id();
-    URI uri();
-    Map<String, Object> metadata();
+    private String id;
+    private URI uri;
+    private Map<String, Object> metadata;
 }

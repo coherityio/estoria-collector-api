@@ -1,12 +1,12 @@
 package io.coherity.estoria.collector.spi;
 
-import java.util.Map;
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-public class CursorMetadata
+public class CollectorIdentifier
 {
-    private Map<String, Object> values;
+    private String providerId;
+    private String entityType;
 }
