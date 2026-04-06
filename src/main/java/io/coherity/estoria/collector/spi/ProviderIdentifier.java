@@ -1,15 +1,17 @@
 package io.coherity.estoria.collector.spi;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.RequiredArgsConstructor;
 
 @Data
-@Builder
+@RequiredArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class EntityIdentifier
+public class ProviderIdentifier
 {
 	@EqualsAndHashCode.Include
-    private String id;
-    private String qualifiedResourceName;
+	private final String id;
+	
+	@EqualsAndHashCode.Include
+	private final String version;
 }

@@ -4,5 +4,5 @@ import java.util.Optional;
 
 public interface EndpointResolver
 {
-    Optional<EndpointReference> resolve(String serviceId, CollectionScope scope);
+    Optional<EndpointReference> resolve(String serviceId, ProviderContext providerContext);
 }

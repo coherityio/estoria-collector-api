@@ -7,16 +7,16 @@ import lombok.Data;
 
 @Data
 @Builder
-public class CollectorRequest
+public class CollectorRequestParameters
 {
 	public static final int PAGE_SIZE_ALL = -1;
     private int pageSize;
     private Optional<String> cursorToken;
-    private CollectionScope scope;
+    private CollectorContext collectorContext;
     private Map<String, Object> filters;
     private Map<String, Object> options;
     
-    public CollectorRequest pageSizeAll()
+    public CollectorRequestParameters pageSizeAll()
     {
     	this.pageSize = PAGE_SIZE_ALL;
     	return this;

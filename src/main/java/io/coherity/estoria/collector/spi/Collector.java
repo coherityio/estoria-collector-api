@@ -8,5 +8,5 @@ public interface Collector
 	String getEntityType();
 	Set<String> requiresEntityTypes();
 	Set<String> getTags();
-	CollectorCursor collect(CollectorRequest request) throws CollectorException;
+	CollectorCursor collect(CollectorRequestParameters requestParams, ProviderSession providerSession) throws CollectorException;
 }

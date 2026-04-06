@@ -13,7 +13,7 @@ public class CloudEntity
 	private EntityIdentifier entityIdentifier;
     private String entityType;
     private String name;
-    private CollectionScope scope;
+    private CollectorContext collectorContext;
     private Map<String, Object> attributes;
     private Object rawPayload;
     private Instant collectedAt;

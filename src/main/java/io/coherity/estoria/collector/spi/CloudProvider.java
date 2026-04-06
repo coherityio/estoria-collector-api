@@ -11,6 +11,8 @@ import lombok.RequiredArgsConstructor;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public abstract class CloudProvider
 {
+	//private ProviderIdentifier providerIdentifier;
+	
 	@EqualsAndHashCode.Include
 	private final String id;
 	
