@@ -10,12 +10,12 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+//@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProviderContext
 {
-	@EqualsAndHashCode.Include
-	private String providerId;
+//	@EqualsAndHashCode.Include
+//	private String providerId;
     private Map<String, Object> attributes;
 }

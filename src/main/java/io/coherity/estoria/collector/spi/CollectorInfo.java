@@ -1,19 +1,23 @@
 package io.coherity.estoria.collector.spi;
 
+import java.util.Set;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class ProviderIdentifier
+@NoArgsConstructor
+@AllArgsConstructor
+public class CollectorInfo
 {
 	@EqualsAndHashCode.Include
-	private final String id;
-	
-	@EqualsAndHashCode.Include
-	private final String version;
+	private String entityType;
+	private String providerId;
+	private Set<String> requiredEntityTypes;
+	private Set<String> tags;
 }
