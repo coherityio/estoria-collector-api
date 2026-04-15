@@ -20,4 +20,5 @@ public class CollectorInfo
 	private String providerId;
 	private Set<String> requiredEntityTypes;
 	private Set<String> tags;
+	private Set<String> supportedContextAttributes;
 }
